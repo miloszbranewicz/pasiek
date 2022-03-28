@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+    {% include './_partials/_head.html' %}
+
+
+  </head>
+  <body>
+
+    {% include './_partials/_navigation.html' %}
+
+    {% block content %}
+    {% endblock%}
+
+    {% include './_partials/_footer.html' %}
+  </body>
+</html>
